@@ -6,3 +6,4 @@ before_script:
     - xcodebuild -version
     - xcodebuild -showsdks
     - java -version
+    - mdls -name kMDItemVersion /Applications/Safari.app/
