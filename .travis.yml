@@ -1,8 +1,17 @@
-os: osx
-language: bash
+language: ruby
+cache: bundler
+
+os:
+  - linux
 
 before_script:
-    - xcodebuild -version
-    - xcodebuild -showsdks
-    - java -version
-    - mdls -name kMDItemVersion /Applications/Safari.app/
+	- cat /proc/cpuinfo
+
+rvm:
+  - jruby
+  - 1.9.3
+  - 2.2.7
+  - 2.3.8
+  - 2.4.5
+  - 2.5.5
+  - 2.6.3
