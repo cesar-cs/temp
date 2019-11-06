@@ -5,7 +5,7 @@ os:
   - linux
 
 before_script:
-	- cat /proc/cpuinfo
+  - cat /proc/cpuinfo
 
 rvm:
   - jruby
