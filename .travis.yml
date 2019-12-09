@@ -5,5 +5,5 @@ before_script:
   - cat /proc/cpuinfo
 
 script:
-  - php-build install --list   
+  - phpenv versions   
   - php -v
