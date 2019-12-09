@@ -1,17 +1,9 @@
-language: ruby
-cache: bundler
-
-os:
-  - linux
+os: linux
+dist: xenial
 
 before_script:
   - cat /proc/cpuinfo
 
-rvm:
-  - jruby
-  - 1.9.3
-  - 2.2.7
-  - 2.3.8
-  - 2.4.5
-  - 2.5.5
-  - 2.6.3
+script:
+  - php-build install --list   
+  - php -v
