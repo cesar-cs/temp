@@ -1,9 +1,8 @@
-os: linux
-dist: xenial
-
-before_script:
-  - cat /proc/cpuinfo
+osx: osx
+osx_image: xcode11.2
 
 script:
-  - phpenv versions   
-  - php -v
+  - pip3 install flake8
+  - which pip3
+  - whereis pip
+  - /usr/local/bin/pip install flake8
