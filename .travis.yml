@@ -1,5 +1,5 @@
 os: windows
-language: python
+language: c
 
 before_install:
 - |-
