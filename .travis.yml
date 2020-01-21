@@ -1,5 +1,5 @@
 language: shell
-os: windows
+os: 1809
 
 script:
     - df -lh
