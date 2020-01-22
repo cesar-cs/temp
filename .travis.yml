@@ -1,5 +1,5 @@
 os: windows1809
-group: dev
+group: edge
 script: 
     - df -lh
 language: c
