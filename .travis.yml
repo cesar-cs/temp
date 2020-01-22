@@ -2,5 +2,6 @@ os: windows
 group: edge
 script: 
     - df -lh
+    - systeminfo
 language: c
 
