@@ -1,4 +1,4 @@
-os: '1809'
+os: 'windows-1809'
 language: shell
 
 script:
