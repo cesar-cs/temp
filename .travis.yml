@@ -1,5 +1,5 @@
+os: '1809'
 language: shell
-os: 'windows-1809'
 
 script:
     - df -lh
