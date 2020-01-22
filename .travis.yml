@@ -1,5 +1,6 @@
 os: windows1809
+group: dev
+script: 
+    - df -lh
 language: c
 
-script:
-    - df -lh
