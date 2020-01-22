@@ -1,4 +1,4 @@
-os: windows1809
+os: windows
 group: edge
 script: 
     - df -lh
