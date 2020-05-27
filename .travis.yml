@@ -1,11 +1,11 @@
-os: freebsd
-dist: '12.1'
+os: linux
+dist: bionic
 
 language: bash
 
+services:
+  - couchdb
+  
 before_script:
-    - curl http://google.com
-    - curl http://dnsimple.com
-    - echo $SHELL
-    - which bash
-    - curl -vv https://api.scaleway.com/instance/v1/zones/fr-par-1
+  - curl -X PUT localhost:5984/test_db
+  - curl http://127.0.0.1:5984/
