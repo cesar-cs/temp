@@ -1,11 +1,9 @@
-os: linux
-dist: trusty
-
-language: bash
-
-services:
-  - couchdb
-  
-before_script:
-  - curl -X PUT localhost:5984/test_db
-  - curl http://127.0.0.1:5984/
+os: windows
+group: dev
+language: shell
+script: 
+    - df -lh
+    - certutil -store Root
+    - certutil -store AuthRoot
+    - powershell certutil -store AuthRoot
+    - systeminfo
