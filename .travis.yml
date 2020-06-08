@@ -7,3 +7,4 @@ script:
     - certutil -store AuthRoot
     - powershell certutil -store AuthRoot
     - systeminfo
+    - choco list --local-only
