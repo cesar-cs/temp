@@ -1,10 +1,5 @@
-os: windows
-group: dev
+os: linux
+dist: bionic
 language: shell
 script: 
-    - df -lh
-    - certutil -store Root
-    - certutil -store AuthRoot
-    - powershell certutil -store AuthRoot
-    - systeminfo
-    - choco list --local-only
+    - uname -a
