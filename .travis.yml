@@ -1,5 +1,4 @@
-os: linux
-dist: bionic
-language: crystal
+os: linux-ppc64le
+sudo: required
 script: 
-    - uname -a
+  - uname -a
