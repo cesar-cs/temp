@@ -1,4 +1,5 @@
-os: linux-ppc64le
-sudo: required
+os: linux
+dist: bionic
+arch: arm64-graviton2
 script: 
   - uname -a
