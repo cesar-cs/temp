@@ -1,5 +1,11 @@
-os: linux
-dist: bionic
-arch: arm64-graviton2
+os: windows
+group: dev
+language: shell
 script: 
-  - uname -a
+    - df -lh
+    - certutil -store Root
+    - certutil -store AuthRoot
+    - powershell certutil -store AuthRoot
+    - systeminfo
+    - choco list --local-only
+    - wget --verbose https://curl.haxx.se/ca/cacert.pe
