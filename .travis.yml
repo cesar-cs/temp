@@ -1,2 +1,6 @@
 os: linux
 arch: ppc64le
+
+script:
+  - uname -a
+  - cat /proc/cpuinfo 
