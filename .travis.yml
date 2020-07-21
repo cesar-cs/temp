@@ -1,6 +1,4 @@
-arch: ppc64le
-os: linux
-virt: lxd
+os: linux-ppc64le
 
 script:
   - uname -a
