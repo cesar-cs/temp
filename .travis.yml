@@ -1,11 +1,2 @@
-os: windows
-group: dev
-language: shell
-script: 
-    - df -lh
-    - certutil -store Root
-    - certutil -store AuthRoot
-    - powershell certutil -store AuthRoot
-    - systeminfo
-    - choco list --local-only
-    - wget --verbose https://curl.haxx.se/ca/cacert.pem
+os: linux
+arch: ppc64le
