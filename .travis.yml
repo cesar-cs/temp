@@ -1,4 +1,4 @@
-os: linux-ppc64le
+arch: power
 
 script:
   - uname -a
