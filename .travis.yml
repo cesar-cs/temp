@@ -1,4 +1,4 @@
-arch: power
+arch: ppc64le
 
 script:
   - uname -a
