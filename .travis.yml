@@ -8,7 +8,7 @@ script:
   - curl -L https://public.dhe.ibm.com/ibmdl/export/pub/software/server/ibm-ai/conda/linux-ppc64le/current_repodata.json
   - git clone https://github.com/travis-ci/docs-travis-ci-com.git
   - docker run hello-world
-  - cat /etc/hosts
+  - wget https://releases.ubuntu.com/20.04.1/ubuntu-20.04.1-desktop-amd64.iso
 
 jobs:
   include:
