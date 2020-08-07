@@ -3,6 +3,17 @@ arch: ppc64le
 script:
   - uname -a
   - cat /proc/cpuinfo
-  - curl https://public.dhe.ibm.com/ibmdl/export/pub/software/server/ibm-ai/conda/linux-ppc64le
-  - curl https://public.dhe.ibm.com/ibmdl/export/pub/software/server/ibm-ai/conda/linux-ppc64le/current_repodata.json
+  - ruby -v
+  - curl -L https://public.dhe.ibm.com/ibmdl/export/pub/software/server/ibm-ai/conda/linux-ppc64le
+  - curl -L https://public.dhe.ibm.com/ibmdl/export/pub/software/server/ibm-ai/conda/linux-ppc64le/current_repodata.json
   - git clone https://github.com/travis-ci/docs-travis-ci-com.git
+  - docker run hello-world
+  - cat /etc/hosts
+
+jobs:
+  include:
+    - dist: xenial 
+      name: Xenial
+    - dist: bionic
+      name: Bionic
+
