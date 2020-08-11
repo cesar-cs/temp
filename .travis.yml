@@ -2,7 +2,10 @@ os: linux
 dist: bionic
 language: shell
 script: 
-  - curl -o /dev/null 51.15.8.214
+  - sudo apt install traceroute -y
+  - traceroute 51.15.231.224
+  - traceroute distribution.akeneo.com
+  - traceroute 51.15.231.149
   - curl -o /dev/null 51.15.8.218
   - curl -o /dev/null 51.15.109.212
   - curl -o /dev/null 51.15.231.149
