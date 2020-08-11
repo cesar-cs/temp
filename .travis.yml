@@ -1,16 +1,16 @@
-arch: ppc64le
-
-script:
-  - uname -a
-  #- cat /proc/cpuinfo
-  - ruby -v
-  - docker run hello-world
-  - wget https://releases.ubuntu.com/20.04.1/ubuntu-20.04.1-desktop-amd64.iso
-
-jobs:
-  include:
-    - dist: xenial 
-      name: Xenial
-    - dist: bionic
-      name: Bionic
-
+os: linux
+dist: bionic
+language: shell
+script: 
+  - curl -o /dev/null 51.15.8.214
+  - curl -o /dev/null 51.15.8.218
+  - curl -o /dev/null 51.15.109.212
+  - curl -o /dev/null 51.15.231.149
+  - curl -o /dev/null 51.15.231.198
+  - curl -o /dev/null 51.15.231.224
+  - curl -o /dev/null 51.15.5.42
+  - curl -o /dev/null https://blitiri.com.ar/go/systemd?go-get=1
+  - curl -o /dev/null ci.openhab.org -L
+  - curl -o /dev/null 51.15.8.214
+  - ssh-keyscan -vp 443 distribution.akeneo.com
+  - curl https://distribution.akeneo.com/ -vvv
