@@ -11,4 +11,5 @@ dist: bionic
 arch: ppc64le
 
 script:
-  - grep OVERLAY_FS .config
+  - cat /sys/module/overlay/parameters/metacopy
+  - zgrep OVERLAY /boot/config-5.3.0-1032-gcp
