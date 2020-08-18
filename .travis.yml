@@ -1,16 +1,14 @@
+language: bash
+
+os: linux
+
+services: docker
+
+sudo: required
+
+dist: bionic
+
 arch: ppc64le
 
 script:
-  - uname -a
-  #- cat /proc/cpuinfo
-  - ruby -v
-  - docker run hello-world
-  - wget https://releases.ubuntu.com/20.04.1/ubuntu-20.04.1-desktop-amd64.iso
-
-jobs:
-  include:
-    - dist: xenial 
-      name: Xenial
-    - dist: bionic
-      name: Bionic
-
+  - grep OVERLAY_FS .config
