@@ -4,12 +4,15 @@ os: linux
 
 services: docker
 
-sudo: required
-
 dist: bionic
 
 arch: ppc64le
 
 script:
   - cat /sys/module/overlay/parameters/metacopy
-  - zgrep OVERLAY /boot/config-5.3.0-1032-gcp
+  - cat /sys/module/overlay/parameters/redirect_always_follow
+  - uname -a 
+  - sudo docker run --privileged -t ubuntu:18.04 bash -c 'apt update -y && apt install -y wget'
+  - sudo docker run -t ubuntu:18.04 bash -c 'apt update -y && apt install -y wget'
+  - 
+
