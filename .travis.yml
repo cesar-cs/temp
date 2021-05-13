@@ -1,4 +1,4 @@
-arch: ppc64le
+os: linux
 
 script:
   - cat /sys/module/overlay/parameters/metacopy
